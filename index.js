@@ -37,6 +37,11 @@ const response = {
   }
 };
 
+//accessing the elements in the response object
+console.log(response.data.users[0].profile.contact.email);
+console.log(response.data.users[1].roles);
+console.log(response.data.meta.source);
+
 // Destructuring and renaming
 const {
   status: responseStatus,
@@ -78,7 +83,7 @@ function displayUserSummary({
 }
 
 // Logs
-console.log('responseStatus:', responseStatus);
+/*console.log('responseStatus:', responseStatus);
 console.log('count:', count);
 console.log('firstUserName:', firstUserName);
 console.log('firstUserRole:', firstUserRole);
@@ -88,5 +93,5 @@ console.log('secondUserPhone:', secondUserPhone);
 
 
 displayUserSummary(firstUser);
-displayUserSummary(secondUser);
+displayUserSummary(secondUser);*/
 
